@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeflex/primeflex.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+  --primary: #3c1c44;
+  --secondary: #eda6a6;
+  --secondary-light: #f4e2e2;
+  --letter: #0c547c;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.title {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin: 10px auto;
+  width: 80%
+}
+
+.flex-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+
+.section {
+  margin: 50px
+}
+
+@media (min-width: 1020px) {
+  .product-grid {
+    width: 70%
+  }
+}

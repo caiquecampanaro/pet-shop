@@ -1,0 +1,8 @@
+<div class="flex-container section">
+  <div class="card-container shadow-8 font-semibold" *ngFor="let card of cards">
+    <div class="card">
+      <img class="responsive-image image" [src]="card.img" alt="">
+      <h2>{{ card.title }}</h2>
+    </div>
+  </div>
+</div>
